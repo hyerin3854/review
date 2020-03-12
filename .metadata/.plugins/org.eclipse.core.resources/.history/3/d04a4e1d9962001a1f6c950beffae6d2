@@ -1,0 +1,32 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>연산결과</h1>
+	<%
+		request.setCharacterEncoding("utf-8");
+		String plus = request.getParameter("plus");
+		String minus = request.getParameter("minus");
+		String multiply = request.getParameter("multiply");
+		String divide = request.getParameter("divide");
+		
+		msg += "덧셈:" + plus + "/r/n";
+		msg += "뺄셈:" + minus + "/r/n";
+		msg += "곱셈:" + multiply + "/r/n";
+		msg += "나눗셈:" + divide + "/r/n";
+		
+		out.println("덧셈:" + plus +"<br>");
+		out.println("뺄셈:" + minus +"<br>");
+		out.println("곱셈:" + multiply +"<br>");
+	
+		
+	%>
+
+
+</body>
+</html>

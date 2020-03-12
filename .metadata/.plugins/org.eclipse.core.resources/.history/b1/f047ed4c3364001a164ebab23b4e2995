@@ -1,0 +1,16 @@
+package och10;
+
+import java.util.Date;
+
+public class Emp {
+	private int empno;
+	private String ename;
+	private Date hiredate;
+	private int comm;
+	private String job;
+	private int mgr;
+	private int sal;
+	private int deptno;
+	
+
+}
